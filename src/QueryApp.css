@@ -1,0 +1,135 @@
+/* QueryApp.css */
+
+/* Container for the entire QueryApp component */
+body {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input field for entering the question */
+ input[type="text"] {
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Button for submitting the query */
+   button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: #0376f0;
+
+  }
+  /* Styling for the answer display */
+   .answer {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  /* Styling for the "Answer" label */
+ .answer p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  /* FAQ List */
+.faq-list {
+  
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-list h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.faq-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-list li {
+  margin-bottom: 20px;
+  border-left: 3px solid #0074d9;
+  padding: 10px 20px;
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.faq-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.faq-list strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.faq-list p {
+  margin: 0;
+  color: #555;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #0074d9;
+  border-bottom: 2px solid #0074d9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f4f4f4;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0074d9;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
